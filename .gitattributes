@@ -1,0 +1,24 @@
+# Auto detect text files and normalize line endings
+* text=auto
+
+# Force C# files to use CRLF (Windows)
+*.cs text eol=crlf
+
+# XAML files
+*.xaml text eol=crlf
+
+# Config files
+*.config text eol=crlf
+
+# Markdown
+*.md text
+
+# Binary files (don't diff)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.dll binary
+*.exe binary
