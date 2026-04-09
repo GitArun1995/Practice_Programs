@@ -116,5 +116,18 @@ namespace PracticeProblems
             }
             return count;
         }
+         public static void Multiplication()
+        {
+            Console.WriteLine("Enter the number");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter 2nd number");
+            int b = Convert.ToInt32(Console.ReadLine());
+                for(int i=1;i<=a;i++){
+                    for(int j=1;j<=b;j++){
+                        Console.WriteLine($"{i} X {j} = {i*j}");
+                    }
+            Console.WriteLine();
+            }
+        }
     }
 }
