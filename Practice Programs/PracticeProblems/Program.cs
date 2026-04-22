@@ -20,6 +20,11 @@ namespace PracticeProblems
             Console.WriteLine($"Even numbers count {CountEvenNUmbers()}");
 
             Console.WriteLine($"Sum numbers count {sumOfNumbers()}");
+
+            CountOccurenceofEachChar();
+
+            BubbleSort();
+
             Console.ReadLine();
         }
 
@@ -32,6 +37,7 @@ namespace PracticeProblems
             {
                 Console.Write(str[i]);
             }
+            
             Console.WriteLine();
             Console.WriteLine();
         }
@@ -115,6 +121,52 @@ namespace PracticeProblems
                 count += numbers[i];
             }
             return count;
+        }
+        public static void CountOccurenceofEachChar()
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Count Number of characters");
+            string str = "Hello World";
+            Dictionary<char, int> dict = new Dictionary<char, int>();
+            foreach(char c in str)
+            {
+                if (c.Equals(' '))
+                    continue;
+                if (dict.ContainsKey(c))
+                    dict[c]++;
+                else
+                    dict[c] = 1;
+            }
+            foreach(var item in dict)
+            {
+                Console.WriteLine($"{item.Key} has Occured {item.Value} times");
+            }
+        }
+        public static void BubbleSort()
+        {
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Bubble sort");
+            int[] arr = { 4, 3, 2, 1 };
+            int temp;
+            for(int i = 0; i < arr.Length - 1; i++)
+            {
+                for(int j = 0; j < arr.Length - i - 1; j++)
+                {
+                    if (arr[j] > arr[j + 1])
+                    {
+                        temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            foreach(int i in arr)
+            {
+                Console.Write($"{i} ");
+            }
         }
     }
 }
