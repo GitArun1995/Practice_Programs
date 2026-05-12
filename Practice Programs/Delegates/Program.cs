@@ -10,8 +10,11 @@ namespace Delegates
     {
         //syntax: <modifier> delegate delegateName <return type> (parameter list);
         public delegate int CalculatorDelegate (int a, int b);
+        public delegate void ActionDelegate();
         static void Main(string[] args)
         {
+            Run(Print);
+            Run(Display);
             Calculator c = new Calculator();
             Console.WriteLine("+,-,*,/");
             char input = Convert.ToChar( Console.ReadLine());
@@ -37,7 +40,12 @@ namespace Delegates
 
             Console.ReadLine();
         }
-       
-       
+       static void Run(ActionDelegate actionDelegate)
+        {
+            Console.WriteLine("Passing Delegate as a parameter");
+            actionDelegate();
+        }
+        static void Print() => Console.WriteLine("This is print method");
+        static void Display() => Console.WriteLine("This is display method");
     }
 }
