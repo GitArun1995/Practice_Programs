@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefletctionClassLibrary", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{5BD2DD3F-9099-410C-B36E-3363660818C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqPractice", "LinqPractice\LinqPractice.csproj", "{3E9062E1-637F-4C41-BDF8-056FF7A87BA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5BD2DD3F-9099-410C-B36E-3363660818C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BD2DD3F-9099-410C-B36E-3363660818C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BD2DD3F-9099-410C-B36E-3363660818C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E9062E1-637F-4C41-BDF8-056FF7A87BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9062E1-637F-4C41-BDF8-056FF7A87BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9062E1-637F-4C41-BDF8-056FF7A87BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9062E1-637F-4C41-BDF8-056FF7A87BA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
